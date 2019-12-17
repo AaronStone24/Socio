@@ -21,7 +21,9 @@ class _HomePageState extends State<HomePage>{
           ),
           IconButton(
             icon: Icon(Icons.notifications,),
-            onPressed: (){},
+            onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (_)=>NoticeBoard()));
+            },
             tooltip: 'Notifications',
           )
         ],

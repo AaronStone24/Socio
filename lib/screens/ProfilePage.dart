@@ -1,10 +1,6 @@
 import 'package:startup_namer/ScreenList.dart';
 import 'package:flutter/material.dart';
 
-ListTile listItem=ListTile(
-  //leading: ,
-);
-
 class ProfilePage extends StatefulWidget{
   final String profilePic,id,name,about,flatDetails,myVisitors,myComplaints,myOrders;
   ProfilePage(this.profilePic,this.id,this.name,this.about,this.flatDetails,this.myVisitors,this.myComplaints,this.myOrders);

@@ -18,3 +18,6 @@ export './screens/placed_order.dart';
 export './FontTheme.dart';
 export './HomePage.dart';
 export './screens/ProfilePage.dart';
+export './dummy_newsfeedData.dart';
+export './models/notice.dart';
+export './screens/noticeboard.dart';

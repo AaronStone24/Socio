@@ -42,6 +42,8 @@ flutter:
     - assets/loading.gif
     - assets/empty.flr
     - assets/images/socioIcon.png
+    - assets/plain-white-background.jpg
+    - assets/plain-607D8B.svg
     
   fonts:
     - family: Montserrat
