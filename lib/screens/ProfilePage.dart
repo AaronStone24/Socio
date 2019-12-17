@@ -70,30 +70,30 @@ class _ProfilePageState extends State<ProfilePage>{
                   ListTile(
                     
                     //contentPadding: EdgeInsets.all(10.0),
-                    leading: Icon(Icons.portrait),
+                    leading: Icon(Icons.portrait,color: Colors.orange[500]),
                     title: Text("Name",style: bodyTheme.copyWith(fontSize: 14,fontWeight: FontWeight.w300)),
                     subtitle: Text(widget.name,style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w700)),
                   ),
                   ListTile(
                     //contentPadding: EdgeInsets.all(10.0),
-                    leading: Icon(Icons.info),
+                    leading: Icon(Icons.info,color: Colors.orange[500]),
                     title: Text("About",style: bodyTheme.copyWith(fontSize: 14,fontWeight: FontWeight.w300)),
                     subtitle: Text(widget.about,style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w700)),
                   ),
                   ListTile(
                     //contentPadding: EdgeInsets.all(10.0),
-                    leading: Icon(Icons.info),
+                    leading: Icon(Icons.info,color: Colors.orange[500]),
                     title: Text("Flat Details",style: bodyTheme.copyWith(fontSize: 14,fontWeight: FontWeight.w300)),
                     subtitle: Text(widget.about,style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w700)),
                   ),
                   ListTile(
                     //contentPadding: EdgeInsets.all(10.0),
-                    leading: Icon(Icons.arrow_right),
+                    leading: Icon(Icons.arrow_right,color: Colors.orange[500]),
                     title: Text("My Visitors",style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w600)),
                   ),
                   ListTile(
                     //contentPadding: EdgeInsets.all(10.0),
-                    leading: Icon(Icons.list),
+                    leading: Icon(Icons.list,color: Colors.orange[500]),
                     title: Text("My Complaints",style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w600)),
                     onTap: (){
                       //Navigator.of(context).push(MaterialPageRoute(builder: (_)=>)),
@@ -101,7 +101,7 @@ class _ProfilePageState extends State<ProfilePage>{
                   ),
                   ListTile(
                     //contentPadding: EdgeInsets.all(10.0),
-                    leading: Icon(Icons.shopping_cart),
+                    leading: Icon(Icons.shopping_cart,color: Colors.orange[500]),
                     title: Text("My Orders",style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w600)),
                     onTap: (){
                       Navigator.of(context).push(MaterialPageRoute(builder: (_)=>PlacedOrderScreen()));

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyBottomAppBar extends StatefulWidget{
-  Widget child;
+  final Widget child;
   MyBottomAppBar(this.child);
   @override
   _BottomAppBarState createState()=> _BottomAppBarState();

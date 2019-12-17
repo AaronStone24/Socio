@@ -21,3 +21,4 @@ export './screens/ProfilePage.dart';
 export './dummy_newsfeedData.dart';
 export './models/notice.dart';
 export './screens/noticeboard.dart';
+export './screens/favourites.dart';

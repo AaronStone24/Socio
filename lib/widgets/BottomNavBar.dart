@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:startup_namer/ScreenList.dart';
+//import 'package:startup_namer/ScreenList.dart';
 
 class BottomNavBar extends StatefulWidget{
-  List<BottomNavigationBarItem> _itemList=[];
-  int NOS;
+  final List<BottomNavigationBarItem> _itemList;
+  final int NOS;
   List<Widget> _widgetList=[];
   BottomNavBar(this._itemList,this._widgetList,this.NOS);
   @override
@@ -85,7 +85,7 @@ class _BottomNavBarState extends State<BottomNavBar> with SingleTickerProviderSt
         size: 28,
         opacity: 0.9,
       ),
-      unselectedItemColor: Colors.blueGrey[400],
+      unselectedItemColor: Colors.blueGrey[700],
       unselectedIconTheme: IconThemeData(
         size: 20,
         opacity: 0.9,

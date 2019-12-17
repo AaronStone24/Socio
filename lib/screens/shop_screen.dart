@@ -36,7 +36,7 @@ class _ShopScreenState extends State<ShopScreen> {
       appBar: appBar,
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
-          canvasColor: Colors.blueGrey[400],
+          canvasColor: Colors.white70,
         ),
         child: BottomNavBar(<BottomNavigationBarItem>[
         BottomNavigationBarItem(

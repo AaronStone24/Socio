@@ -17,12 +17,14 @@ class _HomePageState extends State<HomePage>{
           IconButton(
             icon: Icon(Icons.star,color: Colors.orange[500]),
             tooltip: 'Favorites',
-            onPressed: (){},
+            onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (_)=>FavoriteNewsFeedScreen()));
+            },
           ),
           IconButton(
             icon: Icon(Icons.notifications,),
             onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (_)=>NoticeBoard()));
+              
             },
             tooltip: 'Notifications',
           )
@@ -63,7 +65,12 @@ class _HomePageState extends State<HomePage>{
           HomePage(),
           ProfilePage('assets/images/water.png','','Kartik','','','','',''),
         ],
-        5),
+        5
+      ),
+      body: Padding(
+        child: NoticeBoard(),
+        padding: EdgeInsets.all(5),
+      ),
     );
   }
 }
