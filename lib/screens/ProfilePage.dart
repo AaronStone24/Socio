@@ -2,7 +2,7 @@ import 'package:startup_namer/ScreenList.dart';
 import 'package:flutter/material.dart';
 
 ListTile listItem=ListTile(
-  leading: ,
+  //leading: ,
 );
 
 class ProfilePage extends StatefulWidget{
@@ -12,16 +12,18 @@ class ProfilePage extends StatefulWidget{
   _ProfilePageState createState()=> _ProfilePageState();
 }
 
+final AppBar appbar=AppBar(
+        title: Text('Profile'),
+      );
+
 class _ProfilePageState extends State<ProfilePage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
       backgroundColor: Colors.blueGrey[100],
-      appBar: AppBar(
-        title: Text('Profile'),
-      ),
+      appBar: appbar,
       body: Container(
-        decoration: BoxDecoration(border: Border.all(width: 5)),
+        //decoration: BoxDecoration(border: Border.all(width: 5)),
         alignment: Alignment.topCenter,
         child: Column(
           children: <Widget>[
@@ -63,19 +65,58 @@ class _ProfilePageState extends State<ProfilePage>{
                   )
               ],
             ),
-            Padding(
-              padding: EdgeInsets.only(top:10,left: 10,right: 10),
-              child: ListView.builder(
-                itemCount: 7,
-                itemBuilder: (context,position){
-                  return 
-                },
+            Container(
+              height: MediaQuery.of(context).size.height-appbar.preferredSize.height-250,
+              padding: EdgeInsets.only(bottom: 5),
+              child: ListView(
+                padding: EdgeInsets.all(10.0),
+                children: <Widget>[
+                  ListTile(
+                    
+                    //contentPadding: EdgeInsets.all(10.0),
+                    leading: Icon(Icons.portrait),
+                    title: Text("Name",style: bodyTheme.copyWith(fontSize: 14,fontWeight: FontWeight.w300)),
+                    subtitle: Text(widget.name,style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w700)),
+                  ),
+                  ListTile(
+                    //contentPadding: EdgeInsets.all(10.0),
+                    leading: Icon(Icons.info),
+                    title: Text("About",style: bodyTheme.copyWith(fontSize: 14,fontWeight: FontWeight.w300)),
+                    subtitle: Text(widget.about,style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w700)),
+                  ),
+                  ListTile(
+                    //contentPadding: EdgeInsets.all(10.0),
+                    leading: Icon(Icons.info),
+                    title: Text("Flat Details",style: bodyTheme.copyWith(fontSize: 14,fontWeight: FontWeight.w300)),
+                    subtitle: Text(widget.about,style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w700)),
+                  ),
+                  ListTile(
+                    //contentPadding: EdgeInsets.all(10.0),
+                    leading: Icon(Icons.arrow_right),
+                    title: Text("My Visitors",style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w600)),
+                  ),
+                  ListTile(
+                    //contentPadding: EdgeInsets.all(10.0),
+                    leading: Icon(Icons.list),
+                    title: Text("My Complaints",style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w600)),
+                    onTap: (){
+                      //Navigator.of(context).push(MaterialPageRoute(builder: (_)=>)),
+                    },
+                  ),
+                  ListTile(
+                    //contentPadding: EdgeInsets.all(10.0),
+                    leading: Icon(Icons.shopping_cart),
+                    title: Text("My Orders",style: TextStyle(fontFamily: 'Montserrat',fontSize: 20,fontWeight: FontWeight.w600)),
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (_)=>PlacedOrderScreen()));
+                    },
+                  ),
+                ],
               ),
-            )
+            ),
           ],
         ),
-      ),
-      
+      )
     );
   }
 }

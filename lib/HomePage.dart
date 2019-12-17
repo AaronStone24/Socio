@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage>{
           CategoryScreen(),
           HomePage(),
           HomePage(),
-          ProfilePage('assets/images/water.png','','','','','','',''),
+          ProfilePage('assets/images/water.png','','Kartik','','','','',''),
         ],
         5),
     );
